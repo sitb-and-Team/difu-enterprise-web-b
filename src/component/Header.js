@@ -114,17 +114,6 @@ function headerInnerHtml() {
         '                                    </li>\n' +
         '                                    <li><a href="post.html">博客</a></li>\n' +
         '                                    <li><a href="contact.html">加入我们</a></li>\n' +
-        '                                    <li><a href="#">Pages</a>\n' +
-        '                                        <ul class="dropdown">\n' +
-        '                                            <li><a href="index.html">Home</a></li>\n' +
-        '                                            <li><a href="about.html">About Us</a></li>\n' +
-        '                                            <li><a href="services.html">Services</a></li>\n' +
-        '                                            <li><a href="post.html">Post</a></li>\n' +
-        '                                            <li><a href="single-post.html">Single Post</a></li>\n' +
-        '                                            <li><a href="contact.html">Contact</a></li>\n' +
-        '                                            <li><a href="elements.html">Elements</a></li>\n' +
-        '                                        </ul>\n' +
-        '                                    </li>\n' +
         '                                </ul>\n' +
         '                            </div>\n' +
         '                            <!-- Nav End -->\n' +
