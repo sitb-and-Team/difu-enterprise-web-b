@@ -6,4 +6,4 @@
 
 $('#preloader').html(PreloaderTemplate());
 $('.header-area').html(HeaderTemplate());
-$('#footer').html(FooterTemplate());
+$('.footer-area').html(FooterTemplate());
