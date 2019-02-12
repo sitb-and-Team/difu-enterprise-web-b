@@ -79,7 +79,8 @@ function footerInnerHtml(dataSource) {
     // 获取当前年份 设置版权信息
     var year = new Date().getFullYear();
     var copyRight = 'Copyright &copy;' + year + 'All rights reserved | 上海迪付金融有限公司.';
-    return '    <div class="container">\n' +
+    return '<footer class="footer-area section-padding-100-0">\n' +
+        '    <div class="container">\n' +
         '        <div class="row">\n' + FooterListTemplate(dataSource) + '</div>\n' +
         '    </div>\n' +
         '    <!-- Copywrite Area -->\n' +
@@ -96,7 +97,8 @@ function footerInnerHtml(dataSource) {
         '                </div>\n' +
         '            </div>\n' +
         '        </div>\n' +
-        '    </div>\n';
+        '    </div>\n' +
+        '</footer>\n';
 }
 
 /**
