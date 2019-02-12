@@ -69,6 +69,7 @@ var productionConfig = [{
 
 $('#core').html((CoreTemplate(coreConfig)));
 $('#production').html((ProductionTemplate(productionConfig)));
+$('#partner').html((PartnerTemplate()));
 $(".logo-carousel").owlCarousel({
     loop: true,
     nav: false,
