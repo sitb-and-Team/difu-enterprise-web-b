@@ -3,7 +3,3 @@
  * author: yangyao(873241789@qq.com)
  * date: 2019/2/11
  */
-
-$('#preloader').html(PreloaderTemplate());
-$('.header-area').html(HeaderTemplate());
-$('.footer-area').html(FooterTemplate());
