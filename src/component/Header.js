@@ -114,7 +114,7 @@ function headerInnerHtml() {
         '                                        </div>\n' +
         '                                    </li>\n' +
         '                                    <li><a href="post.html">博客</a></li>\n' +
-        '                                    <li><a href="contact.html">反馈</a></li>\n' +
+        '                                    <li><a href="contact.html">加入我们</a></li>\n' +
         '                                    <li><a href="#">Pages</a>\n' +
         '                                        <ul class="dropdown">\n' +
         '                                            <li><a href="index.html">Home</a></li>\n' +
