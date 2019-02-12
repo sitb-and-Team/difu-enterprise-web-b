@@ -1,3 +1,11 @@
+/*common begin*/
+.paragraph{
+    text-indent: 2em;
+}
+.textCenter{
+    text-align: center;
+}
+/*common end*/
 /*header begin*/
 .classynav ul .helpCenter .megamenu .single-mega.cn-col-4 li:first-child {
     border-bottom: 1px solid #ddd;
@@ -5,8 +13,22 @@
 
 /*header end*/
 
-/*.breadcrumb-area begin*/
-.breadcrumb-area .breadcrumb-content{
+/*breadcrumb-area begin*/
+.breadcrumb-area .breadcrumb-content {
     text-align: center;
 }
-/*.breadcrumb-area end*/
+
+/*breadcrumb-area end*/
+
+/*breadcrumb-area begin*/
+.single-widget-area .credit-tabs-content .nav-tabs .nav-item {
+    width: 30%;
+    margin-right: 3%;
+}
+@media only screen and (max-width: 992px){
+    .sidebar-area{
+        display: none;
+    }
+}
+
+/*breadcrumb-area end*/
