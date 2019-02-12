@@ -30,7 +30,6 @@ function FooterListItemInnerHtml(dataSource) {
 function FooterListItemProductInnerHtml(dataSource) {
     var Default_InnerHtml = '';
     for (var i = 0; i < dataSource.length; i++) {
-        console.log(dataSource, dataSource[i]);
         var href = dataSource[i].href || '#';
         Default_InnerHtml += '<div class="single-latest-news-area d-flex align-items-center">\n' +
             '                        <div class="news-thumbnail">\n' +
