@@ -49,71 +49,58 @@ function headerInnerHtml() {
         '                                    <li><a href="index.html">首页</a></li>\n' +
         '                                    <li><a href="about.html">企业介绍</a></li>\n' +
         '                                    <li><a href="production.html">产品介绍</a></li>\n' +
-        '                                    <li><a href="production.html">行业解决方案</a></li>\n' +
-        '                                    <li><a href="production.html">产品定价</a></li>\n' +
+        '                                    <li><a href="industrySolution.html">行业解决方案</a></li>\n' +
+        '                                    <li><a href="pricing.html">产品定价</a></li>\n' +
         '                                    <li><a href="#">开发者中心</a>\n' +
         '                                        <div class="megamenu">\n' +
         '                                            <ul class="single-mega cn-col-4">\n' +
-        '                                                <li><a href="#">Portfolio 1</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 2</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 3</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 4</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 5</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 6</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 7</a></li>\n' +
+        '                                                <li><a href="#">概述和基础</a></li>\n' +
         '                                            </ul>\n' +
         '                                            <ul class="single-mega cn-col-4">\n' +
-        '                                                <li><a href="#">Portfolio 8</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 9</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 10</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 11</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 12</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 13</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 14</a></li>\n' +
+        '                                                <li><a href="#">接入</a></li>\n' +
         '                                            </ul>\n' +
         '                                            <ul class="single-mega cn-col-4">\n' +
-        '                                                <li><a href="#">Portfolio 15</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 16</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 17</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 18</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 19</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 20</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 21</a></li>\n' +
+        '                                                <li><a href="#">调试</a></li>\n' +
+        '                                            </ul>\n' +
+        '                                            <ul class="single-mega cn-col-4">\n' +
+        '                                                <li><a href="#">论坛</a></li>\n' +
         '                                            </ul>\n' +
         '                                        </div>\n' +
         '                                    </li>\n' +
-        '                                    <li><a href="#">帮助中心</a>\n' +
+        '                                    <li class="helpCenter"><a href="#">帮助中心</a>\n' +
         '                                        <div class="megamenu">\n' +
         '                                            <ul class="single-mega cn-col-4">\n' +
-        '                                                <li><a href="#">Portfolio 1</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 2</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 3</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 4</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 5</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 6</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 7</a></li>\n' +
+        '                                                <li><a href="#">了解并开始使用</a></li>\n' +
+        '                                                <li><a href="#">产品介绍</a></li>\n' +
+        '                                                <li><a href="#">商务接入流程</a></li>\n' +
+        '                                                <li><a href="#">接入的产品能够解决怎样的问题</a></li>\n' +
+        '                                                <li><a href="#">初步接入过程中需要注意的关键点</a></li>\n' +
         '                                            </ul>\n' +
         '                                            <ul class="single-mega cn-col-4">\n' +
-        '                                                <li><a href="#">Portfolio 8</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 9</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 10</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 11</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 12</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 13</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 14</a></li>\n' +
+        '                                                <li><a href="#">账户管理/管理平台</a></li>\n' +
+        '                                                <li><a href="#">注册信息修改</a></li>\n' +
+        '                                                <li><a href="#">账户查询</a></li>\n' +
+        '                                                <li><a href="#">数据服务</a></li>\n' +
+        '                                                <li><a href="#">订单查询</a></li>\n' +
         '                                            </ul>\n' +
         '                                            <ul class="single-mega cn-col-4">\n' +
-        '                                                <li><a href="#">Portfolio 15</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 16</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 17</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 18</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 19</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 20</a></li>\n' +
-        '                                                <li><a href="#">Portfolio 21</a></li>\n' +
+        '                                                <li><a href="#">接入开发</a></li>\n' +
+        '                                                <li><a href="#">参数的配置</a></li>\n' +
+        '                                                <li><a href="#">报错数据查询</a></li>\n' +
+        '                                                <li><a href="#">返回码汇总</a></li>\n' +
+        '                                                <li><a href="#">接入流程问题</a></li>\n' +
+        '                                                <li><a href="#">其他常见问题</a></li>\n' +
+        '                                            </ul>\n' +
+        '                                            <ul class="single-mega cn-col-4">\n' +
+        '                                                <li><a href="#">费用</a></li>\n' +
+        '                                                <li><a href="#">支付通道标准费用</a></li>\n' +
+        '                                                <li><a href="#">我司收费</a></li>\n' +
+        '                                                <li><a href="#">关于发票</a></li>\n' +
+        '                                                <li><a href="#">其他</a></li>\n' +
         '                                            </ul>\n' +
         '                                        </div>\n' +
         '                                    </li>\n' +
-        '                                    <li><a href="post.html">博客</a></li>\n' +
+        '                                    <li><a href="post.html">论坛</a></li>\n' +
         '                                    <li><a href="contact.html">加入我们</a></li>\n' +
         '                                    <li><a href="#">Pages</a>\n' +
         '                                        <ul class="dropdown">\n' +
