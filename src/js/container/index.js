@@ -5,5 +5,5 @@
  */
 
 $('#preloader').html(PreloaderTemplate());
-$('#header').html(HeaderTemplate());
+$('.header-area').html(HeaderTemplate());
 $('#footer').html(FooterTemplate());
