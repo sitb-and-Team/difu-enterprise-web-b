@@ -24,7 +24,7 @@ function FooterListItemInnerHtml(dataSource) {
 
 /**
  * 生成产品item 字符串模版
- * @param dataSource
+ * @param dataSource  格式为{href: string, title: string, description: string}
  * @returns {string}
  */
 function FooterListItemProductInnerHtml(dataSource) {
@@ -48,24 +48,11 @@ function FooterListItemProductInnerHtml(dataSource) {
 }
 
 /**
- * 导出字符串模版
+ * 页脚list 字符串模版
  * @param dataSource
- * @returns {*}
+ * @returns {string}
  * @constructor
  */
-function FooterListItemTemplate(dataSource) {
-    return generateTemplate(FooterListItemInnerHtml(dataSource));
-}
-
-/** 导出 重要产品字符串模版
- * @param dataSource
- * @returns {*}
- * @constructor
- */
-function FooterListItemProductTemplate(dataSource) {
-    return generateTemplate(FooterListItemProductInnerHtml(dataSource));
-}
-
 function FooterListInnerHtml(dataSource) {
     var Default_InnerHtml = '';
     for (var i = 0; i < dataSource.length; i++) {
@@ -83,11 +70,13 @@ function FooterListInnerHtml(dataSource) {
     return Default_InnerHtml;
 }
 
-function FooterListTemplate(dataSource) {
-    return generateTemplate(FooterListInnerHtml(dataSource));
-}
-
+/**
+ * 页脚字符串模版
+ * @param dataSource  数据结构为[{title: string, config: array<object>, type: 'production'}]
+ * @returns {string}
+ */
 function footerInnerHtml(dataSource) {
+    // 获取当前年份 设置版权信息
     var year = new Date().getFullYear();
     var copyRight = 'Copyright &copy;' + year + 'All rights reserved | 上海迪付金融有限公司.';
     return '    <div class="container">\n' +
@@ -108,6 +97,35 @@ function footerInnerHtml(dataSource) {
         '            </div>\n' +
         '        </div>\n' +
         '    </div>\n';
+}
+
+/**
+ * 导出字符串模版
+ * @param dataSource
+ * @returns {*}
+ * @constructor
+ */
+function FooterListItemTemplate(dataSource) {
+    return generateTemplate(FooterListItemInnerHtml(dataSource));
+}
+
+/** 导出 重要产品字符串模版
+ * @param dataSource
+ * @returns {*}
+ * @constructor
+ */
+function FooterListItemProductTemplate(dataSource) {
+    return generateTemplate(FooterListItemProductInnerHtml(dataSource));
+}
+
+/**
+ * 导出 页脚list模版
+ * @param dataSource
+ * @returns {*}
+ * @constructor
+ */
+function FooterListTemplate(dataSource) {
+    return generateTemplate(FooterListInnerHtml(dataSource));
 }
 
 /**
