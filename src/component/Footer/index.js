@@ -88,6 +88,8 @@ function FooterListTemplate(dataSource) {
 }
 
 function footerInnerHtml(dataSource) {
+    var year = new Date().getFullYear();
+    var copyRight = 'Copyright &copy;' + year + 'All rights reserved | 上海迪付金融有限公司.';
     return '<footer class="footer-area section-padding-100-0">\n' +
         '    <div class="container">\n' +
         '        <div class="row">\n' + FooterListTemplate(dataSource) + '</div>\n' +
@@ -101,10 +103,7 @@ function footerInnerHtml(dataSource) {
         '                        <!-- Footer Logo -->\n' +
         '                        <a href="index.html" class="footer-logo"><img src="src/img/core-img/logo.png" alt=""></a>\n' +
         '                        <!-- Copywrite Text -->\n' +
-        '                        <p class="copywrite-text">\n' +
-        '                            <!-- Link back to Colorlib can\'t be removed. Template is licensed under CC BY 3.0. -->\n' +
-        '                            Copyright &copy;<script>document.write(new Date().getFullYear());</script>\n' +
-        '                            All rights reserved | 上海迪付金融有限公司.</p>\n' +
+        '                        <p class="copywrite-text">' + copyRight + '</p>\n' +
         '                    </div>\n' +
         '                </div>\n' +
         '            </div>\n' +
