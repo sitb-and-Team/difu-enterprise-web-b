@@ -7,9 +7,8 @@
 function headerInnerHtml() {
     var address = '浦东新区，芳华路139号';
     var email = 'shangfudata@com';
-    var phone = '666666666';
-    return '    <header class="header-area">\n' +
-        '        <!-- Top Header Area -->\n' +
+    var phone = '4000591990';
+    return '        <!-- Top Header Area -->\n' +
         '        <div class="top-header-area">\n' +
         '            <div class="container h-100">\n' +
         '                <div class="row h-100 align-items-center">\n' +
@@ -137,8 +136,7 @@ function headerInnerHtml() {
         '                    </nav>\n' +
         '                </div>\n' +
         '            </div>\n' +
-        '        </div>\n' +
-        '    </header>';
+        '        </div>';
 }
 
 function HeaderTemplate() {
