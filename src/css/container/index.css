@@ -7,7 +7,7 @@
 .single-about-area {
     z-index: 2;
     position: relative;
-    margin: 20px 0;
+    margin: 50px 0;
 }
 
 .single-logo-wrapper {
@@ -55,7 +55,7 @@
 .single-about-text h4 {
     font-size: 22px;
     text-transform: capitalize;
-    margin: 50px 0;
+    margin: 20px 0;
 }
 
 a.single-about {
