@@ -1,0 +1,12 @@
+/*header begin*/
+.classynav ul .helpCenter .megamenu .single-mega.cn-col-4 li:first-child {
+    border-bottom: 1px solid #ddd;
+}
+
+/*header end*/
+
+/*.breadcrumb-area begin*/
+.breadcrumb-area .breadcrumb-content{
+    text-align: center;
+}
+/*.breadcrumb-area end*/
