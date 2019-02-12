@@ -47,9 +47,9 @@ function headerInnerHtml() {
         '                                <ul>\n' +
         '                                    <li><a href="index.html">首页</a></li>\n' +
         '                                    <li><a href="about.html">企业介绍</a></li>\n' +
-        '                                    <li><a href="services.html">产品介绍</a></li>\n' +
-        '                                    <li><a href="services.html">行业解决方案</a></li>\n' +
-        '                                    <li><a href="services.html">产品定价</a></li>\n' +
+        '                                    <li><a href="production.html">产品介绍</a></li>\n' +
+        '                                    <li><a href="production.html">行业解决方案</a></li>\n' +
+        '                                    <li><a href="production.html">产品定价</a></li>\n' +
         '                                    <li><a href="#">开发者中心</a>\n' +
         '                                        <div class="megamenu">\n' +
         '                                            <ul class="single-mega cn-col-4">\n' +
@@ -114,6 +114,17 @@ function headerInnerHtml() {
         '                                    </li>\n' +
         '                                    <li><a href="post.html">博客</a></li>\n' +
         '                                    <li><a href="contact.html">加入我们</a></li>\n' +
+        '                                    <li><a href="#">Pages</a>\n' +
+        '                                        <ul class="dropdown">\n' +
+        '                                            <li><a href="index.html">Home</a></li>\n' +
+        '                                            <li><a href="about.html">About Us</a></li>\n' +
+        '                                            <li><a href="production.html">Services</a></li>\n' +
+        '                                            <li><a href="post.html">Post</a></li>\n' +
+        '                                            <li><a href="single-post.html">Single Post</a></li>\n' +
+        '                                            <li><a href="contact.html">Contact</a></li>\n' +
+        '                                            <li><a href="elements.html">Elements</a></li>\n' +
+        '                                        </ul>\n' +
+        '                                    </li>\n' +
         '                                </ul>\n' +
         '                            </div>\n' +
         '                            <!-- Nav End -->\n' +
