@@ -36,10 +36,10 @@ var coreConfig = {
 };
 
 var productionConfig = [{
-   href: '#',
-   src: 'src/img/production/about-icon-1.png',
-   label: '聚合支付',
-   value: '实现全渠道支付接入，也可以在已有支付方式上叠加其他支付通道，延伸原有机具业务场景，快速实现全渠道支付'
+    href: '#',
+    src: 'src/img/production/about-icon-1.png',
+    label: '聚合支付',
+    value: '实现全渠道支付接入，也可以在已有支付方式上叠加其他支付通道，延伸原有机具业务场景，快速实现全渠道支付'
 }, {
     href: '#',
     src: 'src/img/production/about-icon-2.png',
@@ -69,3 +69,21 @@ var productionConfig = [{
 
 $('#core').html((CoreTemplate(coreConfig)));
 $('#production').html((ProductionTemplate(productionConfig)));
+$(".logo-carousel").owlCarousel({
+    loop: true,
+    nav: false,
+    margin: 30,
+    autoplay: true,
+    autoplayspeed: 1000,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 5
+        }
+    }
+});
