@@ -12,21 +12,32 @@
  */
 function productionInnerHtml(dataSource) {
     var Default_Html = '';
-    for (var i = 0; i < dataSource.length; i++) {
+    var config = dataSource.config;
+    for (var i = 0; i < config.length; i++) {
         Default_Html += '<div class="col-lg-4">\n' +
-            '                <a href="' + dataSource[i].href + '" class="single-about">\n' +
+            '                <a href="' + config[i].href + '" class="single-about">\n' +
             '                    <div class="single-about-img">\n' +
-            '                        <img src="' + dataSource[i].src + '" alt="">\n' +
+            '                        <img src="' + config[i].src + '" alt="">\n' +
             '                    </div>\n' +
             '                    <div class="single-about-text">\n' +
-            '                        <h4>' + dataSource[i].label + '</h4>\n' +
-            '                        <p>' + dataSource[i].value + '</p>\n' +
+            '                        <h4>' + config[i].label + '</h4>\n' +
+            '                        <p>' + config[i].value + '</p>\n' +
             '                    </div>\n' +
             '                </a>\n' +
             '            </div>';
     }
     return '<div class="single-about-area wow fadeInUp">\n' +
         '    <div class="container">\n' +
+        '        <div class="row">\n' +
+        '            <div class="col-12">\n' +
+        '                <!-- Section Heading -->\n' +
+        '                <div class="section-heading text-center mb-100">\n' +
+        '                    <div class="line"></div>\n' +
+        '                    <p>' + dataSource.subtitle + '</p>\n' +
+        '                    <h2>' + dataSource.title + '</h2>\n' +
+        '                </div>\n' +
+        '            </div>\n' +
+        '        </div>' +
         '        <div class="row">' + Default_Html + '</div>' +
         '    </div>' +
         '  </div>';
@@ -34,7 +45,7 @@ function productionInnerHtml(dataSource) {
 
 /**
  * 导出核心产品 模版
- * @param dataSource 数据格式为 [{href: string, src: string, label: string, value: string}]
+ * @param dataSource 数据格式为 [subtitle: string, title: string, config:{href: string, src: string, label: string, value: string}]
  * @returns {*}
  * @constructor
  */
