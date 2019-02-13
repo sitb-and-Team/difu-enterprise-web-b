@@ -46,7 +46,7 @@ function headerInnerHtml() {
         '                            <!-- Nav Start -->\n' +
         '                            <div class="classynav">\n' +
         '                                <ul>\n' +
-        '                                    <li class="nav-item"><a class="nav-link" href="index.html">首页</a></li>\n' +
+        '                                    <li class="nav-item"><a class="nav-link index active" href="index.html">首页</a></li>\n' +
         '                                    <li class="nav-item"><a class="nav-link" href="about.html">企业介绍</a></li>\n' +
         '                                    <li class="nav-item"><a class="nav-link" href="production.html">产品介绍</a></li>\n' +
         '                                    <li class="nav-item"><a class="nav-link" href="industrySolution.html">行业解决方案</a></li>\n' +
@@ -131,10 +131,11 @@ function headerInnerHtml() {
 
 $(function () {
     var $nowHref = window.location.href.split('/').pop();
+    var $nowHrefLink = $nowHref.split('?')[0];
     $('.nav-link').each(function () {
         var $this = $(this);
         var $thisHref = $this.attr('href');
-        if ($thisHref === $nowHref) {
+        if ($thisHref === $nowHref || $thisHref === $nowHrefLink) {
             $this.addClass('active');
             $this.siblings('a').removeClass('active');
             if ($thisHref !== 'index.html') {
