@@ -136,7 +136,7 @@ $(function () {
         if ($thisHref === $nowHref) {
             $this.addClass('active');
             $this.siblings('a').removeClass('active');
-            if ($thisHref != 'index.html') {
+            if ($thisHref !== 'index.html') {
                 $('.nav-item .index').removeClass('active');
             }
         }
