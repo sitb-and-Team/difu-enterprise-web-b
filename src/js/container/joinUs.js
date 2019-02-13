@@ -9,3 +9,11 @@ var bannerConfig = {
     description: '如果你也有理想并且对金融感兴趣、期待奋斗出自己的一片天地，那么就加入我们吧，我们将满含热情期待你的加入！'
 };
 $('#joinUsBanner').html((HeaderBannerTemplate(bannerConfig)));
+
+var welcomeConfig = {
+    linkTo: 'joinUs.html',
+    title: '加入我们',
+    button: '申请加入',
+    description: '如果你也有理想并且对金融感兴趣、期待奋斗出自己的一片天地，那么就加入我们吧，我们将满含热情期待你的加入！'
+};
+$('#joinUsWelcome').html((welcomeBannerTemplate(welcomeConfig)));
