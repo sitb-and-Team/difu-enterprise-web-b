@@ -38,7 +38,7 @@ $('#core').html((CoreTemplate(coreConfig)));
 
 // banner
 var bannerConfig = {
-    src: 'src/img/bg-img/13.jpg',
+    src: 'src/img/bg-img/bg_21.jpg',
     title: '产品介绍',
     description: '上海迪付金融信息服务有限公司拥有业界一流的优质服务和产品。'
 };
