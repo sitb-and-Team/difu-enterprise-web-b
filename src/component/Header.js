@@ -102,6 +102,7 @@ function headerInnerHtml() {
         '                                    </li>\n' +
         '                                    <li class="nav-item"><a class="nav-link" href="post.html">论坛</a></li>\n' +
         '                                    <li class="nav-item"><a class="nav-link" href="joinUs.html">加入我们</a></li>\n' +
+        '                                    <li class="nav-item"><a class="nav-link" href="login.html">登录</a></li>\n' +
         '                                    <li class="nav-item"><a class="nav-link" href="#">Pages</a>\n' +
         '                                        <ul class="dropdown">\n' +
         '                                            <li><a href="index.html">Home</a></li>\n' +
