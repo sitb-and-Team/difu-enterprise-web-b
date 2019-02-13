@@ -91,3 +91,11 @@ $(".logo-carousel").owlCarousel({
         }
     }
 });
+
+var indexLinkConfig = {
+    linkTo: 'joinUs.html',
+    title: '加入我们',
+    button: '申请加入',
+    description: '你还在犹豫什么？加入我们，享受豪华套餐。'
+};
+$('#indexLink').html((welcomeBannerTemplate(indexLinkConfig)));

@@ -29,3 +29,11 @@ $(".roadmap-carousel").owlCarousel({
         }
     }
 });
+
+var cooperationConfig = {
+    linkTo: 'about.html',
+    title: '想要和我们合作吗',
+    button: '联系我们',
+    description: '上海迪付金融信息服务有限公司本着“客户第一，诚信至上”的原则，欢迎国内外企业/公司/机构与本单位建立长期的合作关系。'
+};
+$('#aboutCooperation').html((welcomeBannerTemplate(cooperationConfig)));
