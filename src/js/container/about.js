@@ -9,3 +9,23 @@ var bannerConfig = {
     description: '上海迪付金融信息服务有限公司以诚信、实力和产品质量获得业界的高度认可。欢迎各界朋友莅临参观、指导和业务洽谈。'
 };
 $('#aboutBanner').html((HeaderBannerTemplate(bannerConfig)));
+
+$(".roadmap-carousel").owlCarousel({
+    loop: true,
+    nav: true,
+    margin: 30,
+    autoplay: true,
+    autoplayspeed: 1000,
+    navText: ['<i class="fa fa-long-arrow-left nav-left-model">', '<i class="fa fa-long-arrow-right nav-right-model">'],
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 3
+        }
+    }
+});
