@@ -13,6 +13,9 @@
 .header-intro{
     color: #fff;
 }
+.classy-menu .classynav .nav-item .nav-link.active{
+    color: #ffbb38;
+}
 
 /*header end*/
 
