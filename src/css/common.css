@@ -1,19 +1,20 @@
 /*common begin*/
-.paragraph{
+.paragraph {
     text-indent: 2em;
 }
-.textCenter{
-    text-align: center;
-}
+
 /*common end*/
+
 /*header begin*/
 .classynav ul .helpCenter .megamenu .single-mega.cn-col-4 li:first-child {
     border-bottom: 1px solid #ddd;
 }
-.header-intro{
+
+.header-intro {
     color: #fff;
 }
-.classy-menu .classynav .nav-item .nav-link.active{
+
+.classy-menu .classynav .nav-item .nav-link.active {
     color: #ffbb38;
 }
 
@@ -31,8 +32,9 @@
     width: 30%;
     margin-right: 3%;
 }
-@media only screen and (max-width: 992px){
-    .sidebar-area{
+
+@media only screen and (max-width: 992px) {
+    .sidebar-area {
         display: none;
     }
 }
@@ -61,4 +63,5 @@
     padding: 0 20px;
     margin-top: 60px;
 }
+
 /*bottom connect end*/
