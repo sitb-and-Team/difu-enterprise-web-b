@@ -46,12 +46,12 @@ function headerInnerHtml() {
         '                            <!-- Nav Start -->\n' +
         '                            <div class="classynav">\n' +
         '                                <ul>\n' +
-        '                                    <li><a href="index.html">首页</a></li>\n' +
-        '                                    <li><a href="about.html">企业介绍</a></li>\n' +
-        '                                    <li><a href="production.html">产品介绍</a></li>\n' +
-        '                                    <li><a href="industrySolution.html">行业解决方案</a></li>\n' +
-        '                                    <li><a href="pricing.html">产品定价</a></li>\n' +
-        '                                    <li><a href="#">开发者中心</a>\n' +
+        '                                    <li class="nav-item"><a class="nav-link" href="index.html">首页</a></li>\n' +
+        '                                    <li class="nav-item"><a class="nav-link" href="about.html">企业介绍</a></li>\n' +
+        '                                    <li class="nav-item"><a class="nav-link" href="production.html">产品介绍</a></li>\n' +
+        '                                    <li class="nav-item"><a class="nav-link" href="industrySolution.html">行业解决方案</a></li>\n' +
+        '                                    <li class="nav-item"><a class="nav-link" href="pricing.html">产品定价</a></li>\n' +
+        '                                    <li class="nav-item"><a class="nav-link" href="#">开发者中心</a>\n' +
         '                                        <div class="megamenu">\n' +
         '                                            <ul class="single-mega cn-col-4">\n' +
         '                                                <li><a href="#">概述和基础</a></li>\n' +
@@ -67,7 +67,7 @@ function headerInnerHtml() {
         '                                            </ul>\n' +
         '                                        </div>\n' +
         '                                    </li>\n' +
-        '                                    <li class="helpCenter"><a href="#">帮助中心</a>\n' +
+        '                                    <li class="nav-item helpCenter"><a class="nav-link" href="#">帮助中心</a>\n' +
         '                                        <div class="megamenu">\n' +
         '                                            <ul class="single-mega cn-col-4">\n' +
         '                                                <li><a href="#">了解并开始使用</a></li>\n' +
@@ -100,9 +100,9 @@ function headerInnerHtml() {
         '                                            </ul>\n' +
         '                                        </div>\n' +
         '                                    </li>\n' +
-        '                                    <li><a href="post.html">论坛</a></li>\n' +
-        '                                    <li><a href="joinUs.html">加入我们</a></li>\n' +
-        '                                    <li><a href="#">Pages</a>\n' +
+        '                                    <li class="nav-item"><a class="nav-link" href="post.html">论坛</a></li>\n' +
+        '                                    <li class="nav-item"><a class="nav-link" href="joinUs.html">加入我们</a></li>\n' +
+        '                                    <li class="nav-item"><a class="nav-link" href="#">Pages</a>\n' +
         '                                        <ul class="dropdown">\n' +
         '                                            <li><a href="index.html">Home</a></li>\n' +
         '                                            <li><a href="about.html">About Us</a></li>\n' +
@@ -127,6 +127,21 @@ function headerInnerHtml() {
         '        </div>\n' +
         '    </header>';
 }
+
+$(function () {
+    var $nowHref = window.location.href.split('/').pop();
+    $('.nav-link').each(function () {
+        var $this = $(this);
+        var $thisHref = $this.attr('href');
+        if ($thisHref === $nowHref) {
+            $this.addClass('active');
+            $this.siblings('a').removeClass('active');
+            if ($thisHref != 'index.html') {
+                $('.nav-item .index').removeClass('active');
+            }
+        }
+    });
+});
 
 function HeaderTemplate() {
     return generateTemplate(headerInnerHtml());
