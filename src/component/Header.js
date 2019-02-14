@@ -48,24 +48,25 @@ function headerInnerHtml() {
         '                                <ul>\n' +
         '                                    <li class="nav-item"><a class="nav-link index active" href="index.html">首页</a></li>\n' +
         '                                    <li class="nav-item"><a class="nav-link" href="about.html">企业介绍</a></li>\n' +
-        '                                    <li class="nav-item"><a class="nav-link" href="production.html">产品介绍</a></li>\n' +
+        '                                    <li class="nav-item"><a class="nav-link" href="production.html">产品介绍</a>\n' +
+        '                                        <ul class="dropdown">\n' +
+        '                                            <li><a href="productionDetailed.html">聚合支付</a></li>\n' +
+        '                                            <li><a href="productionDetailed.html">互联网支付</a></li>\n' +
+        '                                            <li><a href="productionDetailed.html">数据查询</a></li>\n' +
+        '                                            <li><a href="productionDetailed.html">会员账户系统</a></li>\n' +
+        '                                            <li><a href="productionDetailed.html">预付费卡系统</a></li>\n' +
+        '                                            <li><a href="productionDetailed.html">代收代付系统</a></li>\n' +
+        '                                        </ul>\n' +
+        '                                    </li>\n' +
         '                                    <li class="nav-item"><a class="nav-link" href="industrySolution.html">行业解决方案</a></li>\n' +
         '                                    <li class="nav-item"><a class="nav-link" href="pricing.html">产品定价</a></li>\n' +
-        '                                    <li class="nav-item"><a class="nav-link" href="#">开发者中心</a>\n' +
-        '                                        <div class="megamenu">\n' +
-        '                                            <ul class="single-mega cn-col-4">\n' +
-        '                                                <li><a href="#">概述和基础</a></li>\n' +
-        '                                            </ul>\n' +
-        '                                            <ul class="single-mega cn-col-4">\n' +
-        '                                                <li><a href="#">接入</a></li>\n' +
-        '                                            </ul>\n' +
-        '                                            <ul class="single-mega cn-col-4">\n' +
-        '                                                <li><a href="#">调试</a></li>\n' +
-        '                                            </ul>\n' +
-        '                                            <ul class="single-mega cn-col-4">\n' +
-        '                                                <li><a href="#">论坛</a></li>\n' +
-        '                                            </ul>\n' +
-        '                                        </div>\n' +
+        '                                    <li class="nav-item"><a class="nav-link" href="#">产品介绍</a>\n' +
+        '                                        <ul class="dropdown">\n' +
+        '                                            <li><a href="#">概述和基础</a></li>\n' +
+        '                                            <li><a href="#">接入</a></li>\n' +
+        '                                            <li><a href="#">调试</a></li>\n' +
+        '                                            <li><a href="#">论坛</a></li>\n' +
+        '                                        </ul>\n' +
         '                                    </li>\n' +
         '                                    <li class="nav-item helpCenter"><a class="nav-link" href="#">帮助中心</a>\n' +
         '                                        <div class="megamenu">\n' +
