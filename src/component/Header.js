@@ -77,7 +77,7 @@ function headerInnerHtml() {
         '                                            <li><a href="#">论坛</a></li>\n' +
         '                                        </ul>\n' +
         '                                    </li>\n' +
-        '                                    <li class="nav-item helpCenter"><a class="nav-link" href="#">帮助中心</a>\n' +
+        '                                    <li class="nav-item helpCenter"><a class="nav-link" href="help.html">帮助中心</a>\n' +
         '                                        <div class="megamenu">\n' +
         '                                            <ul class="single-mega cn-col-4">\n' +
         '                                                <li><a href="#">了解并开始使用</a></li>\n' +
