@@ -14,14 +14,14 @@ function productionInnerHtml(dataSource) {
     var Default_Html = '';
     var config = dataSource.config;
     for (var i = 0; i < config.length; i++) {
-        Default_Html += '<div class="col-lg-4">\n' +
-            '                <a href="' + config[i].href + '" class="single-about">\n' +
+        Default_Html += '<div class="col-lg-4 top-contact-info">\n' +
+            '                <a href="' + config[i].href + '" class="single-about" data-toggle="tooltip" data-placement="top" title="点击查看详细">\n' +
             '                    <div class="single-about-img">\n' +
             '                        <img src="' + config[i].src + '" alt="">\n' +
             '                    </div>\n' +
             '                    <div class="single-about-text">\n' +
             '                        <h4>' + config[i].label + '</h4>\n' +
-            '                        <p>' + config[i].value + '</p>\n' +
+            '                        <p>' + config[i].value + '</p>' +
             '                    </div>\n' +
             '                </a>\n' +
             '            </div>';

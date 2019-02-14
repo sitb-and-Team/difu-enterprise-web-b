@@ -7,7 +7,7 @@
 // banner
 var bannerConfig = {
     src: 'src/img/bg-img/bg_21.jpg',
-    title: '产品介绍',
+    title: '产品介绍 / 聚合支付',
     description: '上海迪付金融信息服务有限公司拥有业界一流的优质服务和产品。'
 };
 
