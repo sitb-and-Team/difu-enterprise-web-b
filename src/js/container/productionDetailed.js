@@ -4,19 +4,30 @@
  * date: 2019/2/13
  */
 
-// banner
-var bannerConfig = {
-    src: 'src/img/bg-img/bg_21.jpg',
-    title: '产品介绍 / 聚合支付',
-    description: '上海迪付金融信息服务有限公司拥有业界一流的优质服务和产品。'
-};
-
-$('#productionDetailedBanner').html((HeaderBannerTemplate(bannerConfig)));
-
+$('#partner').html(PartnerTemplate());
+$(".logo-carousel").owlCarousel({
+    loop: true,
+    nav: false,
+    margin: 30,
+    autoplay: true,
+    autoplayspeed: 1000,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 5
+        }
+    }
+});
 new fullpage('#fullpage', {
     licenseKey: '263DXXXX-B839XXXX-AE67XXXX-F398XXXX',
-    sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
     navigation: true,
     verticalCentered: false,
-    navigationTooltips: ['', '核心', '实例', '']
+    showActiveTooltip: false,
+    slidesNavigation: true,
+    navigationTooltips: ['简介', '核心', '实例', '']
 });

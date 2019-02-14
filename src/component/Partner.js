@@ -18,7 +18,7 @@ function partnerInnerHtml(dataSource) {
             '                        </div>\n' +
             '            </div>';
     }
-    return '<div class="about-area wow fadeInUp" id="about">\n' +
+    return '<div class="about-area">\n' +
         '    <div class="space-30"></div>\n' +
         '    <div>\n' +
         '        <div class="row">\n' +
