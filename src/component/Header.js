@@ -133,7 +133,7 @@ $(function () {
     var $nowHref = window.location.href.split('/').pop();
     // 根据-截取字符串
     var $nowHrefLink = $nowHref.split('-')[0];
-    $('.nav-link').each(function () {
+    $('.classynav .nav-link').each(function () {
         var $this = $(this);
         var $thisHref = $this.attr('href');
         // 判断url是否相同，或者包含url（子页面）
