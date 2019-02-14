@@ -46,16 +46,16 @@ function headerInnerHtml() {
         '                            <!-- Nav Start -->\n' +
         '                            <div class="classynav">\n' +
         '                                <ul>\n' +
-        '                                    <li class="nav-item"><a class="nav-link index active" href="index.html">首页</a></li>\n' +
+        '                                    <li class="nav-item"><a class="nav-link index" href="index.html">首页</a></li>\n' +
         '                                    <li class="nav-item"><a class="nav-link" href="about.html">企业介绍</a></li>\n' +
         '                                    <li class="nav-item"><a class="nav-link" href="production.html">产品介绍</a>\n' +
         '                                        <ul class="dropdown">\n' +
-        '                                            <li><a href="productionDetailed.html">聚合支付</a></li>\n' +
-        '                                            <li><a href="productionDetailed.html">互联网支付</a></li>\n' +
-        '                                            <li><a href="productionDetailed.html">数据查询</a></li>\n' +
-        '                                            <li><a href="productionDetailed.html">会员账户系统</a></li>\n' +
-        '                                            <li><a href="productionDetailed.html">预付费卡系统</a></li>\n' +
-        '                                            <li><a href="productionDetailed.html">代收代付系统</a></li>\n' +
+        '                                            <li><a href="production-detailed.html">聚合支付</a></li>\n' +
+        '                                            <li><a href="production-detailed.html">互联网支付</a></li>\n' +
+        '                                            <li><a href="production-detailed.html">数据查询</a></li>\n' +
+        '                                            <li><a href="production-detailed.html">会员账户系统</a></li>\n' +
+        '                                            <li><a href="production-detailed.html">预付费卡系统</a></li>\n' +
+        '                                            <li><a href="production-detailed.html">代收代付系统</a></li>\n' +
         '                                        </ul>\n' +
         '                                    </li>\n' +
         '                                    <li class="nav-item"><a class="nav-link" href="industrySolution.html">行业解决方案</a></li>\n' +
@@ -131,17 +131,17 @@ function headerInnerHtml() {
 }
 
 $(function () {
+    // 获取url /后的地址string
     var $nowHref = window.location.href.split('/').pop();
-    var $nowHrefLink = $nowHref.split('?')[0];
+    // 根据-截取字符串
+    var $nowHrefLink = $nowHref.split('-')[0];
     $('.nav-link').each(function () {
         var $this = $(this);
         var $thisHref = $this.attr('href');
-        if ($thisHref === $nowHref || $thisHref === $nowHrefLink) {
+        // 判断url是否相同，或者包含url（子页面）
+        if ($thisHref === $nowHref || $thisHref.indexOf($nowHrefLink) > -1) {
             $this.addClass('active');
             $this.siblings('a').removeClass('active');
-            if ($thisHref !== 'index.html') {
-                $('.nav-item .index').removeClass('active');
-            }
         }
     });
 });
