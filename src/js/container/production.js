@@ -37,7 +37,7 @@ var productionConfig = {
     title: '核心产品',
     subtitle: 'Core production',
     config: [{
-        href: 'productionDetailed.html',
+        href: 'production-detailed.html',
         src: 'src/img/production/about-icon-1.png',
         label: '聚合支付',
         value: '实现全渠道支付接入，也可以在已有支付方式上叠加其他支付通道，延伸原有机具业务场景，快速实现全渠道支付'
