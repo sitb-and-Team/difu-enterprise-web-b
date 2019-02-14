@@ -58,7 +58,16 @@ function headerInnerHtml() {
         '                                            <li><a href="production-detailed.html">代收代付系统</a></li>\n' +
         '                                        </ul>\n' +
         '                                    </li>\n' +
-        '                                    <li class="nav-item"><a class="nav-link" href="industrySolution.html">行业解决方案</a></li>\n' +
+        '                                    <li class="nav-item"><a class="nav-link" href="industrySolution.html">行业解决方案</a>\n' +
+        '                                        <ul class="dropdown">\n' +
+        '                                            <li><a href="industrySolution-detailed.html">运营商行业</a></li>\n' +
+        '                                            <li><a href="industrySolution-detailed.html">教育行业</a></li>\n' +
+        '                                            <li><a href="industrySolution-detailed.html">消金行业</a></li>\n' +
+        '                                            <li><a href="industrySolution-detailed.html">保险行业</a></li>\n' +
+        '                                            <li><a href="industrySolution-detailed.html">境外收单行业</a></li>\n' +
+        '                                            <li><a href="industrySolution-detailed.html">B2B/B2C</a></li>\n' +
+        '                                        </ul>\n' +
+        '                                    </li>\n' +
         '                                    <li class="nav-item"><a class="nav-link" href="pricing.html">产品定价</a></li>\n' +
         '                                    <li class="nav-item"><a class="nav-link" href="#">产品介绍</a>\n' +
         '                                        <ul class="dropdown">\n' +
