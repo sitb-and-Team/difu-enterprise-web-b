@@ -626,6 +626,7 @@ img {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .header-area .credit-main-menu .classy-navbar .classynav ul li a {
+        padding: 0 5px;
         font-size: 14px;
     }
 }
