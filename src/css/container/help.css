@@ -25,12 +25,18 @@ ul {
     box-shadow: 0 10px 10px rgba(153, 153, 153, 0.1);
 }
 
+.sidebar-categories .main-nav-list {
+    width: 100%;
+    padding-left: 0;
+}
+
 .sidebar-categories .main-nav-list a {
     font-size: 14px;
     display: block;
     line-height: 50px;
     padding: 0;
     padding-left: 10px;
+    text-align: left;
     border-bottom: 1px solid #eee;
 }
 
@@ -113,4 +119,15 @@ ul {
 
 .main-categories a {
     color: #000;
+}
+
+.nav-tabs .nav-item {
+    text-align: left;
+    width: 100%;
+}
+
+.single-widget-area {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0;
 }
