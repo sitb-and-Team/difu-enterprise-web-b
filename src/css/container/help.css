@@ -131,3 +131,7 @@ ul {
     z-index: 1;
     margin-bottom: 0;
 }
+
+.credit-tabs-content .nav-tabs .nav-link {
+    text-align: left;
+}
