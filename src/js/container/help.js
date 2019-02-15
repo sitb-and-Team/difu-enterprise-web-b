@@ -1,4 +1,8 @@
-
+/**
+ * Copyright: Copyright (C) 2018 sitb.software,All Rights Reserved
+ * author: HJF(2283785225@qq.com)
+ * date: 2019/2/15
+ */
 
 /**
  * 导出SideBar模版
