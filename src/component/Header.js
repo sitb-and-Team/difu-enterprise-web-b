@@ -111,7 +111,7 @@ function headerInnerHtml() {
         '                                        </div>\n' +
         '                                    </li>\n' +
         '                                    <li class="nav-item"><a class="nav-link" href="post.html">论坛</a></li>\n' +
-        '                                    <li class="nav-item"><a class="nav-link" href="joinUs.html">加入我们</a></li>\n' +
+        '                                    <li class="nav-item"><a class="nav-link" href="https://www.lagou.com/gongsi/171527.html" target="_blank">加入我们</a></li>\n' +
         '                                    <li class="nav-item"><a class="nav-link" href="login.html">登录</a></li>\n' +
         '                                </ul>\n' +
         '                            </div>\n' +
