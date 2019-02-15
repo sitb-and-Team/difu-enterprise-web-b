@@ -3,6 +3,9 @@
 
     var input = $('.validate-input .input100');
 
+    /**
+     * 注册表单正则验证
+     */
     $('.register-form').on('submit', function () {
         var check = true;
 
@@ -19,6 +22,9 @@
         return check;
     });
 
+    /**
+     * 重置表单正则验证
+     */
     $('.reset-form').on('submit', function () {
         var check = true;
 
@@ -34,7 +40,9 @@
         }
         return check;
     });
-
+    /**
+     * 登录表单正则验证
+     */
     $('.validate-form').on('submit', function () {
         var check = true;
 
@@ -47,6 +55,9 @@
         return check;
     });
 
+    /**
+     * 隐藏提示语句
+     */
     $('.validate-form .input100').each(function () {
         $(this).focus(function () {
             hideValidate(this);
@@ -76,7 +87,6 @@
         }
     }
 
-
     function showValidate(input) {
         var thisAlert = $(input).parent();
 
@@ -89,21 +99,39 @@
         $(thisAlert).removeClass('alert-validate');
     }
 
-    $('.register a').click(function () {
-        $('.register-form').animate({height: "toggle", display: "siblings"}, "slow");
-        $('.validate-form').css("display", "none");
-        $('.reset-form').css("display", "none");
-    });
-    $('.login a').click(function () {
+    /**
+     * 隐藏所有表单的提示信息
+     */
+    function hideAllValidate() {
+        $('.validate-form .input100').each(function () {
+            hideValidate(this);
+        });
+        $('.register-form .input100').each(function () {
+            hideValidate(this);
+        });
+        $('.reset-form .input100').each(function () {
+            hideValidate(this);
+        });
+    }
+
+    $('.login').click(function () {
+        hideAllValidate();
         $('.validate-form').animate({height: "toggle", display: "siblings"}, "slow");
         $('.register-form').css("display", "none");
         $('.reset-form').css("display", "none");
     });
-
-    $('.resetPwd a').click(function () {
+    $('.register').click(function () {
+        hideAllValidate();
+        $('.register-form').animate({height: "toggle", display: "siblings"}, "slow");
+        $('.validate-form').css("display", "none");
+        $('.reset-form').css("display", "none");
+    });
+    $('.resetPwd').click(function () {
+        hideAllValidate();
         $('.reset-form').animate({height: "toggle", display: "siblings"}, "slow");
         $('.register-form').css("display", "none");
         $('.validate-form').css("display", "none");
     });
+
 
 })(jQuery);
