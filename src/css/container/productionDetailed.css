@@ -7,8 +7,10 @@
     background: #f9f9ff;
 }
 
+.banner-area,
+.container,
 .banner-area .fullscreen {
-    height: 750px !important;
+    height: 100%;
 }
 
 .banner-left h6 {
@@ -34,8 +36,28 @@
 }
 
 @media (max-width: 767px) {
+    .banner-area .fullscreen {
+    }
     .banner-left {
-        margin-top: 100px;
+        justify-content: center;
+    }
+    .banner-right {
+        margin-top: -30%;
+    }
+    /*隐藏头部跟页脚*/
+    .top-header-area,
+    #secondBox,
+    #footer{
+        display: none;
+    }
+    /*修改标题文字*/
+    .banner-area h6{
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+    .banner-area h1 {
+        font-size: 20px;
     }
 }
 
@@ -44,10 +66,12 @@
     display: flex;
     align-items: center;
 }
+
 .media-feature .icon {
     font-size: 60px;
     color: #007bff;
 }
+
 .media-feature h3 {
     font-size: 20px;
 }
