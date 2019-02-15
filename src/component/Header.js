@@ -69,7 +69,7 @@ function headerInnerHtml() {
         '                                        </ul>\n' +
         '                                    </li>\n' +
         '                                    <li class="nav-item"><a class="nav-link" href="pricing.html">产品定价</a></li>\n' +
-        '                                    <li class="nav-item"><a class="nav-link" href="#">开发者中心</a>\n' +
+        '                                    <li class="nav-item"><a class="nav-link" href="developerCenter.html">开发者中心</a>\n' +
         '                                        <ul class="dropdown">\n' +
         '                                            <li><a href="#">概述和基础</a></li>\n' +
         '                                            <li><a href="#">接入</a></li>\n' +
